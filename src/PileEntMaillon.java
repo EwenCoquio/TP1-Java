@@ -29,13 +29,13 @@ public class PileEntMaillon extends MaillonFrele {
     }
 
     public boolean estVide() {
-        return true;
+        return this.top == null;
     }
 
     public void dump() {
         MaillonFrele tmp = this.top;
         while (tmp != null) {
-            System.out.print("[" + String.valueOf(tmp.getVal()) + "] -> ");
+            System.out.print("[" + tmp.getVal() + "] -> ");
             tmp = tmp.getPrec();
         }
         System.out.println("null");

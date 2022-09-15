@@ -20,15 +20,15 @@ public class Main {
         }*/
        // MaillonFrele test2 = new MaillonFrele(3);
         PileEntMaillon test = new PileEntMaillon(2);
-        System.out.println(test.sommet());
         test.empile(3);
-        System.out.println(test.sommet());
         test.empile(8);
-        System.out.println(test.sommet());
-        test.depile();
-        test.depile();
-        test.empile(6);
+        System.out.println(test.estVide());
         test.dump();
+        test.depile();
+        test.depile();
+        test.depile();
+        test.dump();
+        System.out.println(test.estVide());
 
     }
 }
