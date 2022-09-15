@@ -35,8 +35,9 @@ public class PileEntMaillon extends MaillonFrele {
     public void dump() {
         MaillonFrele tmp = this.top;
         while (tmp != null) {
-            System.out.println(tmp.getVal());
+            System.out.print("[" + String.valueOf(tmp.getVal()) + '] -> ');
             tmp = tmp.getPrec();
         }
+        System.out.println("null");
     }
 }
