@@ -6,13 +6,16 @@ public class Main {
     public static void main(String[] argv) {
         System.out.println("Hello world!");
 
-        if (argv[0] == "maillon") {
-            test = new PileEntMaillon(1);
-        } else if (argv[0] == "tableau") {
+        if (argv[0].equals("maillon") ){
+            test = new PileEntMaillon();
+
+        } else if (argv[0].equals("tableau")) {
             test = new PileEntTab(5);
+
         }
 
-        for (int i = 0; i < argv.length; i++) {
+        //test = new PileEntMaillon();
+        for (int i = 1; i < argv.length; i++) {
             if (argv[i].equals("e")) {
                 i++;
                 test.empile(Integer.parseInt(argv[i]));
@@ -26,3 +29,4 @@ public class Main {
 
     }
 }
+
