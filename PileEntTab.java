@@ -40,7 +40,7 @@ class PileEntTab implements PileEnt {
     @Override
     public void dump() {
         System.out.println("****");
-        for (int i = top; i > -1; i--) {
+        for (int i = 0; i <= top; i++) {
             System.out.print("|");
             System.out.print(tab[i]);
             System.out.print("|\n");
